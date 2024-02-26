@@ -1,9 +1,4 @@
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-// @ts-nocheck TODO remove when fixed
+
 function initMap() {
   const bounds = new google.maps.LatLngBounds();
   const markersArray = [];
@@ -93,12 +88,12 @@ function deleteMarkers(markersArray) {
 }
 
 document.getElementById("go").onclick = function(){
-    initMap();
+    window.initMap();
 }
 
 document.getElementById("dest"),onkeypress = function(e) {
-	if (e.keyCode == 13) {
-  	initMap();
+  if (e.keyCode == 13) {
+  	window.initMap();
   }
 }
 //window.initMap = initMap;
